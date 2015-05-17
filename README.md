@@ -1,4 +1,19 @@
-console_app
-===========
+Synopsis
 
-A Symfony project created on May 15, 2015, 3:38 pm.
+Sainburys cli app to scrape a website and prints the json scraped and processed to screen
+
+Used symfony 2
+1. RestBungle
+composer.phar require "friendsofsymfony/rest-bundle" "@dev"
+2. Command Bundle
+composer.phar require "symfony/console"
+3. writeable folder for crawler cookies "/tmp"
+
+API Reference
+execution
+sainsburys:scrape  ./app/console sainsburys:scrape
+
+
+Tests
+cd /tests
+phpunit
