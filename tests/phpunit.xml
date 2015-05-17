@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="true"
+         backupStaticAttributes="false"
+         bootstrap="../app/bootstrap.php.cache"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="true"
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         syntaxCheck="false"
+         strict="false"
+         verbose="false">
+
+	<testsuites>
+		<testsuite name="Sainsburys">
+			<directory suffix=".php">../src/SainsburysBundle/Tests/Command</directory>
+		</testsuite>
+	</testsuites>
+   <logging>
+      <log type="coverage-clover" target="build/logs/clover.xml"/>
+      <log type="coverage-html" target="build/coverage" title="Sainsburys"/>
+      <log type="junit" target="build/logs/junit.xml"/>
+   </logging>
+   <filter>
+    <whitelist addUncoveredFilesFromWhitelist="true">
+    </whitelist>
+  </filter>
+</phpunit>

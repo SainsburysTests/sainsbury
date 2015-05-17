@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Sainsburys" tests="1" assertions="0" failures="0" errors="1" time="0.126491">
+    <testsuite name="SainsburysBundle\Tests\Command\SainsburysCommandTest" file="/var/www/console_app/src/SainsburysBundle/Tests/Command/SainsburysCommandTest.php" tests="1" assertions="0" failures="0" errors="1" time="0.126491">
+      <testcase name="testExecute" class="SainsburysBundle\Tests\Command\SainsburysCommandTest" file="/var/www/console_app/src/SainsburysBundle/Tests/Command/SainsburysCommandTest.php" line="11" assertions="0" time="0.126491">
+        <error type="PHPUnit_Framework_ExceptionWrapper">SainsburysBundle\Tests\Command\SainsburysCommandTest::testExecute
+RuntimeException: Either set KERNEL_DIR in your phpunit.xml according to http://symfony.com/doc/current/book/testing.html#your-first-functional-test or override the WebTestCase::createKernel() method.
+
+/var/www/console_app/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Test/KernelTestCase.php:120
+/var/www/console_app/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Test/KernelTestCase.php:159
+/var/www/console_app/src/SainsburysBundle/Tests/Command/SainsburysCommandTest.php:13
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>

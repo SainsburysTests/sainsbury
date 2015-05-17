@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/console_app/app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../../css/nv.d3.css" rel="stylesheet">
+  <link href="../../../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../../../js/html5shiv.min.js"></script>
+  <script src="../../../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../../../index.html"></a></li>
+        <li><a href="../../../index.html">var</a></li>
+        <li><a href="../../index.html">www</a></li>
+        <li><a href="../index.html">console_app</a></li>
+        <li><a href="index.html">app</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="bootstrap.php.cache.html#2786">ContainerAware</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2724">ApcClassLoader</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2803">Bundle</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2902">ConfigCache</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3122">ContainerAwareHttpKernel</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2976">HttpKernel</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2301">Kernel</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1985">Container</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#282">FileBag</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#128">HeaderBag</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#352">ServerBag</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#400">Request</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1789">ResponseHeaderBag</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1244">Response</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#11">ParameterBag</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="bootstrap.php.cache.html#400">Request</a></td><td class="text-right">58806</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1244">Response</a></td><td class="text-right">20880</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2301">Kernel</a></td><td class="text-right">13572</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1985">Container</a></td><td class="text-right">5700</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1789">ResponseHeaderBag</a></td><td class="text-right">2070</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#128">HeaderBag</a></td><td class="text-right">1980</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#11">ParameterBag</a></td><td class="text-right">1190</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2976">HttpKernel</a></td><td class="text-right">1122</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2803">Bundle</a></td><td class="text-right">650</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#282">FileBag</a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#352">ServerBag</a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2902">ConfigCache</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2724">ApcClassLoader</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3122">ContainerAwareHttpKernel</a></td><td class="text-right">20</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="bootstrap.php.cache.html#1890"><abbr title="ResponseHeaderBag::clearCookie">clearCookie</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1872"><abbr title="ResponseHeaderBag::getCookies">getCookies</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1859"><abbr title="ResponseHeaderBag::removeCookie">removeCookie</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1894"><abbr title="ResponseHeaderBag::makeDisposition">makeDisposition</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1917"><abbr title="ResponseHeaderBag::computeCacheControlValue">computeCacheControlValue</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2000"><abbr title="Container::compile">compile</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1996"><abbr title="Container::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1855"><abbr title="ResponseHeaderBag::setCookie">setCookie</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1851"><abbr title="ResponseHeaderBag::getCacheControlDirective">getCacheControlDirective</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1814"><abbr title="ResponseHeaderBag::allPreserveCase">allPreserveCase</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1805"><abbr title="ResponseHeaderBag::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1798"><abbr title="ResponseHeaderBag::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1818"><abbr title="ResponseHeaderBag::replace">replace</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1826"><abbr title="ResponseHeaderBag::set">set</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1847"><abbr title="ResponseHeaderBag::hasCacheControlDirective">hasCacheControlDirective</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1838"><abbr title="ResponseHeaderBag::remove">remove</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2005"><abbr title="Container::isFrozen">isFrozen</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2009"><abbr title="Container::getParameterBag">getParameterBag</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2213"><abbr title="Container::hasScope">hasScope</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2193"><abbr title="Container::addScope">addScope</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2166"><abbr title="Container::leaveScope">leaveScope</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2217"><abbr title="Container::isScopeActive">isScopeActive</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2221"><abbr title="Container::camelize">camelize</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2319"><abbr title="Kernel::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2225"><abbr title="Container::underscore">underscore</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2140"><abbr title="Container::enterScope">enterScope</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2128"><abbr title="Container::getServiceIds">getServiceIds</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2021"><abbr title="Container::setParameter">setParameter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2017"><abbr title="Container::hasParameter">hasParameter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2013"><abbr title="Container::getParameter">getParameter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2025"><abbr title="Container::set">set</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2051"><abbr title="Container::has">has</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2117"><abbr title="Container::initialized">initialized</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2063"><abbr title="Container::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1777"><abbr title="Response::ensureIEOverSSLCompatibility">ensureIEOverSSLCompatibility</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1758"><abbr title="Response::closeOutputBuffers">closeOutputBuffers</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1597"><abbr title="Response::setClientTtl">setClientTtl</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1592"><abbr title="Response::setTtl">setTtl</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1586"><abbr title="Response::getTtl">getTtl</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1602"><abbr title="Response::getLastModified">getLastModified</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1606"><abbr title="Response::setLastModified">setLastModified</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1621"><abbr title="Response::setEtag">setEtag</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1617"><abbr title="Response::getEtag">getEtag</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1580"><abbr title="Response::setSharedMaxAge">setSharedMaxAge</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1575"><abbr title="Response::setMaxAge">setMaxAge</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1530"><abbr title="Response::getAge">getAge</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1524"><abbr title="Response::setDate">setDate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1520"><abbr title="Response::getDate">getDate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1537"><abbr title="Response::expire">expire</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1544"><abbr title="Response::getExpires">getExpires</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1563"><abbr title="Response::getMaxAge">getMaxAge</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1552"><abbr title="Response::setExpires">setExpires</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1633"><abbr title="Response::setCache">setCache</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1666"><abbr title="Response::setNotModified">setNotModified</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1738"><abbr title="Response::isOk">isOk</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1734"><abbr title="Response::isServerError">isServerError</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1730"><abbr title="Response::isClientError">isClientError</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1742"><abbr title="Response::isForbidden">isForbidden</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1746"><abbr title="Response::isNotFound">isNotFound</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1754"><abbr title="Response::isEmpty">isEmpty</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1750"><abbr title="Response::isRedirect">isRedirect</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1726"><abbr title="Response::isRedirection">isRedirection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1722"><abbr title="Response::isSuccessful">isSuccessful</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1679"><abbr title="Response::getVary">getVary</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1675"><abbr title="Response::hasVary">hasVary</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1690"><abbr title="Response::setVary">setVary</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1695"><abbr title="Response::isNotModified">isNotModified</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1718"><abbr title="Response::isInformational">isInformational</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1714"><abbr title="Response::isInvalid">isInvalid</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2330"><abbr title="Kernel::init">init</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2333"><abbr title="Kernel::__clone">__clone</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2839"><abbr title="Bundle::getNamespace">getNamespace</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2817"><abbr title="Bundle::getContainerExtension">getContainerExtension</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2814"><abbr title="Bundle::build">build</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2844"><abbr title="Bundle::getPath">getPath</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2852"><abbr title="Bundle::getParent">getParent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2864"><abbr title="Bundle::registerCommands">registerCommands</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2855"><abbr title="Bundle::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2811"><abbr title="Bundle::shutdown">shutdown</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2808"><abbr title="Bundle::boot">boot</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2743"><abbr title="ApcClassLoader::unregister">unregister</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2739"><abbr title="ApcClassLoader::register">register</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2728"><abbr title="ApcClassLoader::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2747"><abbr title="ApcClassLoader::loadClass">loadClass</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2754"><abbr title="ApcClassLoader::findFile">findFile</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2789"><abbr title="ContainerAware::setContainer">setContainer</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2761"><abbr title="ApcClassLoader::__call">__call</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2890"><abbr title="Bundle::getContainerExtensionClass">getContainerExtensionClass</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2906"><abbr title="ConfigCache::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3052"><abbr title="HttpKernel::finishRequest">finishRequest</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3045"><abbr title="HttpKernel::filterResponse">filterResponse</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3013"><abbr title="HttpKernel::handleRaw">handleRaw</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3057"><abbr title="HttpKernel::handleException">handleException</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3084"><abbr title="HttpKernel::varToString">varToString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3133"><abbr title="ContainerAwareHttpKernel::handle">handle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3125"><abbr title="ContainerAwareHttpKernel::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3003"><abbr title="HttpKernel::terminateWithException">terminateWithException</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2999"><abbr title="HttpKernel::terminate">terminate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2915"><abbr title="ConfigCache::isFresh">isFresh</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2911"><abbr title="ConfigCache::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2936"><abbr title="ConfigCache::write">write</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2954"><abbr title="ConfigCache::getMetaFile">getMetaFile</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2987"><abbr title="HttpKernel::handle">handle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2981"><abbr title="HttpKernel::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2715"><abbr title="Kernel::unserialize">unserialize</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2711"><abbr title="Kernel::serialize">serialize</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2468"><abbr title="Kernel::isDebug">isDebug</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2464"><abbr title="Kernel::getEnvironment">getEnvironment</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2457"><abbr title="Kernel::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2472"><abbr title="Kernel::getRootDir">getRootDir</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2480"><abbr title="Kernel::getContainer">getContainer</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2488"><abbr title="Kernel::setClassCache">setClassCache</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2484"><abbr title="Kernel::loadClassCache">loadClassCache</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2412"><abbr title="Kernel::locateResource">locateResource</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2402"><abbr title="Kernel::getBundle">getBundle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2366"><abbr title="Kernel::shutdown">shutdown</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2357"><abbr title="Kernel::terminate">terminate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2341"><abbr title="Kernel::boot">boot</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2378"><abbr title="Kernel::handle">handle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2385"><abbr title="Kernel::getHttpKernel">getHttpKernel</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2393"><abbr title="Kernel::isClassInActiveBundle">isClassInActiveBundle</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2389"><abbr title="Kernel::getBundles">getBundles</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2492"><abbr title="Kernel::getStartTime">getStartTime</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2496"><abbr title="Kernel::getCacheDir">getCacheDir</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2625"><abbr title="Kernel::prepareContainer">prepareContainer</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2604"><abbr title="Kernel::buildContainer">buildContainer</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2594"><abbr title="Kernel::getEnvParameters">getEnvParameters</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2642"><abbr title="Kernel::getContainerBuilder">getContainerBuilder</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2650"><abbr title="Kernel::dumpContainer">dumpContainer</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2674"><abbr title="Kernel::stripComments">stripComments</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2662"><abbr title="Kernel::getContainerLoader">getContainerLoader</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2582"><abbr title="Kernel::getKernelParameters">getKernelParameters</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2564"><abbr title="Kernel::initializeContainer">initializeContainer</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2504"><abbr title="Kernel::getCharset">getCharset</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2500"><abbr title="Kernel::getLogDir">getLogDir</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2508"><abbr title="Kernel::doLoadClassCache">doLoadClassCache</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2514"><abbr title="Kernel::initializeBundles">initializeBundles</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2560"><abbr title="Kernel::getContainerBaseClass">getContainerBaseClass</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2556"><abbr title="Kernel::getContainerClass">getContainerClass</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1516"><abbr title="Response::mustRevalidate">mustRevalidate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1510"><abbr title="Response::setPublic">setPublic</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#494"><abbr title="Request::create">create</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#474"><abbr title="Request::createFromGlobals">createFromGlobals</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#453"><abbr title="Request::initialize">initialize</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#560"><abbr title="Request::setFactory">setFactory</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#564"><abbr title="Request::duplicate">duplicate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#614"><abbr title="Request::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#604"><abbr title="Request::__clone">__clone</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#449"><abbr title="Request::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#354"><abbr title="ServerBag::getHeaders">getHeaders</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#289"><abbr title="FileBag::replace">replace</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#285"><abbr title="FileBag::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#268"><abbr title="HeaderBag::parseCacheControl">parseCacheControl</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#294"><abbr title="FileBag::set">set</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#301"><abbr title="FileBag::add">add</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#328"><abbr title="FileBag::fixPhpFilesArray">fixPhpFilesArray</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#307"><abbr title="FileBag::convertFileInformation">convertFileInformation</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#621"><abbr title="Request::overrideGlobals">overrideGlobals</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#644"><abbr title="Request::setTrustedProxies">setTrustedProxies</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#722"><abbr title="Request::hasPreviousSession">hasPreviousSession</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#718"><abbr title="Request::getSession">getSession</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#705"><abbr title="Request::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#726"><abbr title="Request::hasSession">hasSession</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#730"><abbr title="Request::setSession">setSession</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#756"><abbr title="Request::getClientIp">getClientIp</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#734"><abbr title="Request::getClientIps">getClientIps</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#701"><abbr title="Request::getHttpMethodParameterOverride">getHttpMethodParameterOverride</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#697"><abbr title="Request::enableHttpMethodParameterOverride">enableHttpMethodParameterOverride</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#654"><abbr title="Request::anonymous function">anonymous function</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#648"><abbr title="Request::getTrustedProxies">getTrustedProxies</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#659"><abbr title="Request::getTrustedHosts">getTrustedHosts</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#663"><abbr title="Request::setTrustedHeaderName">setTrustedHeaderName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#677"><abbr title="Request::normalizeQueryString">normalizeQueryString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#670"><abbr title="Request::getTrustedHeaderName">getTrustedHeaderName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#252"><abbr title="HeaderBag::getCacheControlHeader">getCacheControlHeader</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#248"><abbr title="HeaderBag::count">count</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#97"><abbr title="ParameterBag::getInt">getInt</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#93"><abbr title="ParameterBag::getDigits">getDigits</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#89"><abbr title="ParameterBag::getAlnum">getAlnum</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#101"><abbr title="ParameterBag::getBoolean">getBoolean</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#105"><abbr title="ParameterBag::filter">filter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#120"><abbr title="ParameterBag::count">count</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#116"><abbr title="ParameterBag::getIterator">getIterator</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#85"><abbr title="ParameterBag::getAlpha">getAlpha</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#81"><abbr title="ParameterBag::remove">remove</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#26"><abbr title="ParameterBag::replace">replace</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#22"><abbr title="ParameterBag::keys">keys</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#18"><abbr title="ParameterBag::all">all</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#30"><abbr title="ParameterBag::add">add</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#34"><abbr title="ParameterBag::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#77"><abbr title="ParameterBag::has">has</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#73"><abbr title="ParameterBag::set">set</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#132"><abbr title="HeaderBag::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#138"><abbr title="HeaderBag::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#226"><abbr title="HeaderBag::addCacheControlDirective">addCacheControlDirective</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#216"><abbr title="HeaderBag::getDate">getDate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#208"><abbr title="HeaderBag::remove">remove</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#231"><abbr title="HeaderBag::hasCacheControlDirective">hasCacheControlDirective</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#235"><abbr title="HeaderBag::getCacheControlDirective">getCacheControlDirective</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#244"><abbr title="HeaderBag::getIterator">getIterator</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#239"><abbr title="HeaderBag::removeCacheControlDirective">removeCacheControlDirective</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#204"><abbr title="HeaderBag::contains">contains</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#200"><abbr title="HeaderBag::has">has</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#158"><abbr title="HeaderBag::keys">keys</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#154"><abbr title="HeaderBag::all">all</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#162"><abbr title="HeaderBag::replace">replace</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#167"><abbr title="HeaderBag::add">add</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#187"><abbr title="HeaderBag::set">set</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#173"><abbr title="HeaderBag::get">get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#761"><abbr title="Request::getScriptName">getScriptName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#765"><abbr title="Request::getPathInfo">getPathInfo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1225"><abbr title="Request::createRequestFromFactory">createRequestFromFactory</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1214"><abbr title="Request::getUrlencodedPrefix">getUrlencodedPrefix</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1205"><abbr title="Request::setPhpDefaultLocale">setPhpDefaultLocale</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1236"><abbr title="Request::isFromTrustedProxy">isFromTrustedProxy</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1337"><abbr title="Response::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1351"><abbr title="Response::__toString">__toString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1347"><abbr title="Response::create">create</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1200"><abbr title="Request::initializeFormats">initializeFormats</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1183"><abbr title="Request::preparePathInfo">preparePathInfo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1081"><abbr title="Request::getAcceptableContentTypes">getAcceptableContentTypes</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1074"><abbr title="Request::getEncodings">getEncodings</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1067"><abbr title="Request::getCharsets">getCharsets</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1088"><abbr title="Request::isXmlHttpRequest">isXmlHttpRequest</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1092"><abbr title="Request::prepareRequestUri">prepareRequestUri</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1166"><abbr title="Request::prepareBasePath">prepareBasePath</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1124"><abbr title="Request::prepareBaseUrl">prepareBaseUrl</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1358"><abbr title="Response::__clone">__clone</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1362"><abbr title="Response::prepare">prepare</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1482"><abbr title="Response::getCharset">getCharset</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1477"><abbr title="Response::setCharset">setCharset</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1473"><abbr title="Response::getStatusCode">getStatusCode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1486"><abbr title="Response::isCacheable">isCacheable</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1496"><abbr title="Response::isFresh">isFresh</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1504"><abbr title="Response::setPrivate">setPrivate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1500"><abbr title="Response::isValidateable">isValidateable</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1456"><abbr title="Response::setStatusCode">setStatusCode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1452"><abbr title="Response::getProtocolVersion">getProtocolVersion</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1419"><abbr title="Response::sendContent">sendContent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1403"><abbr title="Response::sendHeaders">sendHeaders</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1424"><abbr title="Response::send">send</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1435"><abbr title="Response::setContent">setContent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1447"><abbr title="Response::setProtocolVersion">setProtocolVersion</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1443"><abbr title="Response::getContent">getContent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1039"><abbr title="Request::getLanguages">getLanguages</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1017"><abbr title="Request::getPreferredLanguage">getPreferredLanguage</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#857"><abbr title="Request::getUriForPath">getUriForPath</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#850"><abbr title="Request::getUri">getUri</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#846"><abbr title="Request::getSchemeAndHttpHost">getSchemeAndHttpHost</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#861"><abbr title="Request::getQueryString">getQueryString</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#866"><abbr title="Request::isSecure">isSecure</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#902"><abbr title="Request::setMethod">setMethod</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#874"><abbr title="Request::getHost">getHost</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#839"><abbr title="Request::getRequestUri">getRequestUri</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#830"><abbr title="Request::getHttpHost">getHttpHost</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#786"><abbr title="Request::getScheme">getScheme</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#779"><abbr title="Request::getBaseUrl">getBaseUrl</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#772"><abbr title="Request::getBasePath">getBasePath</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#790"><abbr title="Request::getPort">getPort</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#813"><abbr title="Request::getUser">getUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#821"><abbr title="Request::getUserInfo">getUserInfo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#817"><abbr title="Request::getPassword">getPassword</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#907"><abbr title="Request::getMethod">getMethod</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#921"><abbr title="Request::getRealMethod">getRealMethod</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#987"><abbr title="Request::isMethod">isMethod</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#983"><abbr title="Request::getLocale">getLocale</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#979"><abbr title="Request::setLocale">setLocale</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#991"><abbr title="Request::isMethodSafe">isMethodSafe</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#995"><abbr title="Request::getContent">getContent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1013"><abbr title="Request::isNoCache">isNoCache</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1009"><abbr title="Request::getETags">getETags</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#975"><abbr title="Request::getDefaultLocale">getDefaultLocale</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#968"><abbr title="Request::setDefaultLocale">setDefaultLocale</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#932"><abbr title="Request::getFormat">getFormat</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#925"><abbr title="Request::getMimeType">getMimeType</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#946"><abbr title="Request::setFormat">setFormat</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#953"><abbr title="Request::getRequestFormat">getRequestFormat</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#964"><abbr title="Request::getContentType">getContentType</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#960"><abbr title="Request::setRequestFormat">setRequestFormat</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#14"><abbr title="ParameterBag::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="bootstrap.php.cache.html#2063"><abbr title="Container::get">get</abbr></a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1124"><abbr title="Request::prepareBaseUrl">prepareBaseUrl</abbr></a></td><td class="text-right">306</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#494"><abbr title="Request::create">create</abbr></a></td><td class="text-right">306</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1362"><abbr title="Response::prepare">prepare</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2412"><abbr title="Kernel::locateResource">locateResource</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#354"><abbr title="ServerBag::getHeaders">getHeaders</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#34"><abbr title="ParameterBag::get">get</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#874"><abbr title="Request::getHost">getHost</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2514"><abbr title="Kernel::initializeBundles">initializeBundles</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#564"><abbr title="Request::duplicate">duplicate</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#790"><abbr title="Request::getPort">getPort</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1894"><abbr title="ResponseHeaderBag::makeDisposition">makeDisposition</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2674"><abbr title="Kernel::stripComments">stripComments</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1633"><abbr title="Response::setCache">setCache</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2166"><abbr title="Container::leaveScope">leaveScope</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1917"><abbr title="ResponseHeaderBag::computeCacheControlValue">computeCacheControlValue</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2864"><abbr title="Bundle::registerCommands">registerCommands</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1695"><abbr title="Response::isNotModified">isNotModified</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1092"><abbr title="Request::prepareRequestUri">prepareRequestUri</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#734"><abbr title="Request::getClientIps">getClientIps</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1017"><abbr title="Request::getPreferredLanguage">getPreferredLanguage</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2025"><abbr title="Container::set">set</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1758"><abbr title="Response::closeOutputBuffers">closeOutputBuffers</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1039"><abbr title="Request::getLanguages">getLanguages</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2140"><abbr title="Container::enterScope">enterScope</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3084"><abbr title="HttpKernel::varToString">varToString</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3057"><abbr title="HttpKernel::handleException">handleException</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#328"><abbr title="FileBag::fixPhpFilesArray">fixPhpFilesArray</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2604"><abbr title="Kernel::buildContainer">buildContainer</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3013"><abbr title="HttpKernel::handleRaw">handleRaw</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#173"><abbr title="HeaderBag::get">get</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2193"><abbr title="Container::addScope">addScope</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#995"><abbr title="Request::getContent">getContent</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#677"><abbr title="Request::normalizeQueryString">normalizeQueryString</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#474"><abbr title="Request::createFromGlobals">createFromGlobals</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2915"><abbr title="ConfigCache::isFresh">isFresh</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#621"><abbr title="Request::overrideGlobals">overrideGlobals</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1183"><abbr title="Request::preparePathInfo">preparePathInfo</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1872"><abbr title="ResponseHeaderBag::getCookies">getCookies</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2817"><abbr title="Bundle::getContainerExtension">getContainerExtension</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1486"><abbr title="Response::isCacheable">isCacheable</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1777"><abbr title="Response::ensureIEOverSSLCompatibility">ensureIEOverSSLCompatibility</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2936"><abbr title="ConfigCache::write">write</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#907"><abbr title="Request::getMethod">getMethod</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1456"><abbr title="Response::setStatusCode">setStatusCode</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2582"><abbr title="Kernel::getKernelParameters">getKernelParameters</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1435"><abbr title="Response::setContent">setContent</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1403"><abbr title="Response::sendHeaders">sendHeaders</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#830"><abbr title="Request::getHttpHost">getHttpHost</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2051"><abbr title="Container::has">has</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2625"><abbr title="Kernel::prepareContainer">prepareContainer</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#105"><abbr title="ParameterBag::filter">filter</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#866"><abbr title="Request::isSecure">isSecure</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#307"><abbr title="FileBag::convertFileInformation">convertFileInformation</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#932"><abbr title="Request::getFormat">getFormat</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2650"><abbr title="Kernel::dumpContainer">dumpContainer</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2564"><abbr title="Kernel::initializeContainer">initializeContainer</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2341"><abbr title="Kernel::boot">boot</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2117"><abbr title="Container::initialized">initialized</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1859"><abbr title="ResponseHeaderBag::removeCookie">removeCookie</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1621"><abbr title="Response::setEtag">setEtag</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1563"><abbr title="Response::getMaxAge">getMaxAge</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1166"><abbr title="Request::prepareBasePath">prepareBasePath</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#187"><abbr title="HeaderBag::set">set</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#268"><abbr title="HeaderBag::parseCacheControl">parseCacheControl</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#705"><abbr title="Request::get">get</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#138"><abbr title="HeaderBag::__toString">__toString</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#252"><abbr title="HeaderBag::getCacheControlHeader">getCacheControlHeader</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2594"><abbr title="Kernel::getEnvParameters">getEnvParameters</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2508"><abbr title="Kernel::doLoadClassCache">doLoadClassCache</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#294"><abbr title="FileBag::set">set</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1750"><abbr title="Response::isRedirect">isRedirect</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1424"><abbr title="Response::send">send</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#946"><abbr title="Request::setFormat">setFormat</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#925"><abbr title="Request::getMimeType">getMimeType</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2366"><abbr title="Kernel::shutdown">shutdown</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2357"><abbr title="Kernel::terminate">terminate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2128"><abbr title="Container::getServiceIds">getServiceIds</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2393"><abbr title="Kernel::isClassInActiveBundle">isClassInActiveBundle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2402"><abbr title="Kernel::getBundle">getBundle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2728"><abbr title="ApcClassLoader::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2642"><abbr title="Kernel::getContainerBuilder">getContainerBuilder</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1679"><abbr title="Response::getVary">getVary</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2855"><abbr title="Bundle::getName">getName</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2987"><abbr title="HttpKernel::handle">handle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1205"><abbr title="Request::setPhpDefaultLocale">setPhpDefaultLocale</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1225"><abbr title="Request::createRequestFromFactory">createRequestFromFactory</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1214"><abbr title="Request::getUrlencodedPrefix">getUrlencodedPrefix</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#216"><abbr title="HeaderBag::getDate">getDate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#722"><abbr title="Request::hasPreviousSession">hasPreviousSession</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2472"><abbr title="Kernel::getRootDir">getRootDir</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2457"><abbr title="Kernel::getName">getName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#167"><abbr title="HeaderBag::add">add</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#765"><abbr title="Request::getPathInfo">getPathInfo</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#132"><abbr title="HeaderBag::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2378"><abbr title="Kernel::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2981"><abbr title="HttpKernel::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3003"><abbr title="HttpKernel::terminateWithException">terminateWithException</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3133"><abbr title="ContainerAwareHttpKernel::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2333"><abbr title="Kernel::__clone">__clone</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#3125"><abbr title="ContainerAwareHttpKernel::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2844"><abbr title="Bundle::getPath">getPath</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2747"><abbr title="ApcClassLoader::loadClass">loadClass</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2754"><abbr title="ApcClassLoader::findFile">findFile</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#301"><abbr title="FileBag::add">add</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#208"><abbr title="HeaderBag::remove">remove</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#235"><abbr title="HeaderBag::getCacheControlDirective">getCacheControlDirective</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2556"><abbr title="Kernel::getContainerClass">getContainerClass</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#670"><abbr title="Request::getTrustedHeaderName">getTrustedHeaderName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#663"><abbr title="Request::setTrustedHeaderName">setTrustedHeaderName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2492"><abbr title="Kernel::getStartTime">getStartTime</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#821"><abbr title="Request::getUserInfo">getUserInfo</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1067"><abbr title="Request::getCharsets">getCharsets</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1666"><abbr title="Response::setNotModified">setNotModified</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1074"><abbr title="Request::getEncodings">getEncodings</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1714"><abbr title="Response::isInvalid">isInvalid</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1718"><abbr title="Response::isInformational">isInformational</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1730"><abbr title="Response::isClientError">isClientError</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1726"><abbr title="Response::isRedirection">isRedirection</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1722"><abbr title="Response::isSuccessful">isSuccessful</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1081"><abbr title="Request::getAcceptableContentTypes">getAcceptableContentTypes</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1606"><abbr title="Response::setLastModified">setLastModified</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1516"><abbr title="Response::mustRevalidate">mustRevalidate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1500"><abbr title="Response::isValidateable">isValidateable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1236"><abbr title="Request::isFromTrustedProxy">isFromTrustedProxy</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1530"><abbr title="Response::getAge">getAge</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1537"><abbr title="Response::expire">expire</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1586"><abbr title="Response::getTtl">getTtl</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1552"><abbr title="Response::setExpires">setExpires</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1544"><abbr title="Response::getExpires">getExpires</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1734"><abbr title="Response::isServerError">isServerError</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1013"><abbr title="Request::isNoCache">isNoCache</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#850"><abbr title="Request::getUri">getUri</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#861"><abbr title="Request::getQueryString">getQueryString</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1996"><abbr title="Container::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#839"><abbr title="Request::getRequestUri">getRequestUri</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1337"><abbr title="Response::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#772"><abbr title="Request::getBasePath">getBasePath</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#779"><abbr title="Request::getBaseUrl">getBaseUrl</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#786"><abbr title="Request::getScheme">getScheme</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#953"><abbr title="Request::getRequestFormat">getRequestFormat</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#968"><abbr title="Request::setDefaultLocale">setDefaultLocale</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1805"><abbr title="ResponseHeaderBag::__toString">__toString</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1798"><abbr title="ResponseHeaderBag::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#983"><abbr title="Request::getLocale">getLocale</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1818"><abbr title="ResponseHeaderBag::replace">replace</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1826"><abbr title="ResponseHeaderBag::set">set</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1851"><abbr title="ResponseHeaderBag::getCacheControlDirective">getCacheControlDirective</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#1838"><abbr title="ResponseHeaderBag::remove">remove</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="bootstrap.php.cache.html#2319"><abbr title="Kernel::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.0.16</a> using <a href="http://php.net/" target="_top">PHP 5.5.3-1ubuntu2.6</a> and <a href="http://phpunit.de/">PHPUnit 4.6.6</a> at Sun May 17 20:37:02 BST 2015.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../../../js/holder.js" type="text/javascript"></script>
+  <script src="../../../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([15,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([280,0,0,0,0,0,0,0,0,0,0,1], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,34,"<a href=\"bootstrap.php.cache.html#11\">ParameterBag<\/a>"],[0,44,"<a href=\"bootstrap.php.cache.html#128\">HeaderBag<\/a>"],[0,19,"<a href=\"bootstrap.php.cache.html#282\">FileBag<\/a>"],[0,15,"<a href=\"bootstrap.php.cache.html#352\">ServerBag<\/a>"],[0,242,"<a href=\"bootstrap.php.cache.html#400\">Request<\/a>"],[0,144,"<a href=\"bootstrap.php.cache.html#1244\">Response<\/a>"],[0,45,"<a href=\"bootstrap.php.cache.html#1789\">ResponseHeaderBag<\/a>"],[0,75,"<a href=\"bootstrap.php.cache.html#1985\">Container<\/a>"],[0,116,"<a href=\"bootstrap.php.cache.html#2301\">Kernel<\/a>"],[0,10,"<a href=\"bootstrap.php.cache.html#2724\">ApcClassLoader<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2786\">ContainerAware<\/a>"],[0,25,"<a href=\"bootstrap.php.cache.html#2803\">Bundle<\/a>"],[0,14,"<a href=\"bootstrap.php.cache.html#2902\">ConfigCache<\/a>"],[0,33,"<a href=\"bootstrap.php.cache.html#2976\">HttpKernel<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#3122\">ContainerAwareHttpKernel<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"bootstrap.php.cache.html#14\">ParameterBag::__construct<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#18\">ParameterBag::all<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#22\">ParameterBag::keys<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#26\">ParameterBag::replace<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#30\">ParameterBag::add<\/a>"],[0,14,"<a href=\"bootstrap.php.cache.html#34\">ParameterBag::get<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#73\">ParameterBag::set<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#77\">ParameterBag::has<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#81\">ParameterBag::remove<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#85\">ParameterBag::getAlpha<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#89\">ParameterBag::getAlnum<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#93\">ParameterBag::getDigits<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#97\">ParameterBag::getInt<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#101\">ParameterBag::getBoolean<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#105\">ParameterBag::filter<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#116\">ParameterBag::getIterator<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#120\">ParameterBag::count<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#132\">HeaderBag::__construct<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#138\">HeaderBag::__toString<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#154\">HeaderBag::all<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#158\">HeaderBag::keys<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#162\">HeaderBag::replace<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#167\">HeaderBag::add<\/a>"],[0,7,"<a href=\"bootstrap.php.cache.html#173\">HeaderBag::get<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#187\">HeaderBag::set<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#200\">HeaderBag::has<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#204\">HeaderBag::contains<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#208\">HeaderBag::remove<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#216\">HeaderBag::getDate<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#226\">HeaderBag::addCacheControlDirective<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#231\">HeaderBag::hasCacheControlDirective<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#235\">HeaderBag::getCacheControlDirective<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#239\">HeaderBag::removeCacheControlDirective<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#244\">HeaderBag::getIterator<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#248\">HeaderBag::count<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#252\">HeaderBag::getCacheControlHeader<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#268\">HeaderBag::parseCacheControl<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#285\">FileBag::__construct<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#289\">FileBag::replace<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#294\">FileBag::set<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#301\">FileBag::add<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#307\">FileBag::convertFileInformation<\/a>"],[0,7,"<a href=\"bootstrap.php.cache.html#328\">FileBag::fixPhpFilesArray<\/a>"],[0,15,"<a href=\"bootstrap.php.cache.html#354\">ServerBag::getHeaders<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#449\">Request::__construct<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#453\">Request::initialize<\/a>"],[0,6,"<a href=\"bootstrap.php.cache.html#474\">Request::createFromGlobals<\/a>"],[0,17,"<a href=\"bootstrap.php.cache.html#494\">Request::create<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#560\">Request::setFactory<\/a>"],[0,10,"<a href=\"bootstrap.php.cache.html#564\">Request::duplicate<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#604\">Request::__clone<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#614\">Request::__toString<\/a>"],[0,6,"<a href=\"bootstrap.php.cache.html#621\">Request::overrideGlobals<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#644\">Request::setTrustedProxies<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#648\">Request::getTrustedProxies<\/a>"],[100,1,"<a href=\"bootstrap.php.cache.html#652\">Request::setTrustedHosts<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#654\">Request::anonymous function<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#659\">Request::getTrustedHosts<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#663\">Request::setTrustedHeaderName<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#670\">Request::getTrustedHeaderName<\/a>"],[0,6,"<a href=\"bootstrap.php.cache.html#677\">Request::normalizeQueryString<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#697\">Request::enableHttpMethodParameterOverride<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#701\">Request::getHttpMethodParameterOverride<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#705\">Request::get<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#718\">Request::getSession<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#722\">Request::hasPreviousSession<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#726\">Request::hasSession<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#730\">Request::setSession<\/a>"],[0,8,"<a href=\"bootstrap.php.cache.html#734\">Request::getClientIps<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#756\">Request::getClientIp<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#761\">Request::getScriptName<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#765\">Request::getPathInfo<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#772\">Request::getBasePath<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#779\">Request::getBaseUrl<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#786\">Request::getScheme<\/a>"],[0,10,"<a href=\"bootstrap.php.cache.html#790\">Request::getPort<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#813\">Request::getUser<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#817\">Request::getPassword<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#821\">Request::getUserInfo<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#830\">Request::getHttpHost<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#839\">Request::getRequestUri<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#846\">Request::getSchemeAndHttpHost<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#850\">Request::getUri<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#857\">Request::getUriForPath<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#861\">Request::getQueryString<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#866\">Request::isSecure<\/a>"],[0,12,"<a href=\"bootstrap.php.cache.html#874\">Request::getHost<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#902\">Request::setMethod<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#907\">Request::getMethod<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#921\">Request::getRealMethod<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#925\">Request::getMimeType<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#932\">Request::getFormat<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#946\">Request::setFormat<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#953\">Request::getRequestFormat<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#960\">Request::setRequestFormat<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#964\">Request::getContentType<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#968\">Request::setDefaultLocale<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#975\">Request::getDefaultLocale<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#979\">Request::setLocale<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#983\">Request::getLocale<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#987\">Request::isMethod<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#991\">Request::isMethodSafe<\/a>"],[0,6,"<a href=\"bootstrap.php.cache.html#995\">Request::getContent<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1009\">Request::getETags<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1013\">Request::isNoCache<\/a>"],[0,8,"<a href=\"bootstrap.php.cache.html#1017\">Request::getPreferredLanguage<\/a>"],[0,8,"<a href=\"bootstrap.php.cache.html#1039\">Request::getLanguages<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1067\">Request::getCharsets<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1074\">Request::getEncodings<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1081\">Request::getAcceptableContentTypes<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1088\">Request::isXmlHttpRequest<\/a>"],[0,9,"<a href=\"bootstrap.php.cache.html#1092\">Request::prepareRequestUri<\/a>"],[0,17,"<a href=\"bootstrap.php.cache.html#1124\">Request::prepareBaseUrl<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#1166\">Request::prepareBasePath<\/a>"],[0,6,"<a href=\"bootstrap.php.cache.html#1183\">Request::preparePathInfo<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1200\">Request::initializeFormats<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#1205\">Request::setPhpDefaultLocale<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#1214\">Request::getUrlencodedPrefix<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#1225\">Request::createRequestFromFactory<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1236\">Request::isFromTrustedProxy<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1337\">Response::__construct<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1347\">Response::create<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1351\">Response::__toString<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1358\">Response::__clone<\/a>"],[0,16,"<a href=\"bootstrap.php.cache.html#1362\">Response::prepare<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#1403\">Response::sendHeaders<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1419\">Response::sendContent<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#1424\">Response::send<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#1435\">Response::setContent<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1443\">Response::getContent<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1447\">Response::setProtocolVersion<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1452\">Response::getProtocolVersion<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#1456\">Response::setStatusCode<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1473\">Response::getStatusCode<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1477\">Response::setCharset<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1482\">Response::getCharset<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#1486\">Response::isCacheable<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1496\">Response::isFresh<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1500\">Response::isValidateable<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1504\">Response::setPrivate<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1510\">Response::setPublic<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1516\">Response::mustRevalidate<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1520\">Response::getDate<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1524\">Response::setDate<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1530\">Response::getAge<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1537\">Response::expire<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1544\">Response::getExpires<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1552\">Response::setExpires<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#1563\">Response::getMaxAge<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1575\">Response::setMaxAge<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1580\">Response::setSharedMaxAge<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1586\">Response::getTtl<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1592\">Response::setTtl<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1597\">Response::setClientTtl<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1602\">Response::getLastModified<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1606\">Response::setLastModified<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1617\">Response::getEtag<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#1621\">Response::setEtag<\/a>"],[0,10,"<a href=\"bootstrap.php.cache.html#1633\">Response::setCache<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1666\">Response::setNotModified<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1675\">Response::hasVary<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#1679\">Response::getVary<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1690\">Response::setVary<\/a>"],[0,9,"<a href=\"bootstrap.php.cache.html#1695\">Response::isNotModified<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1714\">Response::isInvalid<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1718\">Response::isInformational<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1722\">Response::isSuccessful<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1726\">Response::isRedirection<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1730\">Response::isClientError<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1734\">Response::isServerError<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1738\">Response::isOk<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1742\">Response::isForbidden<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1746\">Response::isNotFound<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#1750\">Response::isRedirect<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1754\">Response::isEmpty<\/a>"],[0,8,"<a href=\"bootstrap.php.cache.html#1758\">Response::closeOutputBuffers<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#1777\">Response::ensureIEOverSSLCompatibility<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1798\">ResponseHeaderBag::__construct<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1805\">ResponseHeaderBag::__toString<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1814\">ResponseHeaderBag::allPreserveCase<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1818\">ResponseHeaderBag::replace<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1826\">ResponseHeaderBag::set<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1838\">ResponseHeaderBag::remove<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1847\">ResponseHeaderBag::hasCacheControlDirective<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1851\">ResponseHeaderBag::getCacheControlDirective<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1855\">ResponseHeaderBag::setCookie<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#1859\">ResponseHeaderBag::removeCookie<\/a>"],[0,6,"<a href=\"bootstrap.php.cache.html#1872\">ResponseHeaderBag::getCookies<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#1890\">ResponseHeaderBag::clearCookie<\/a>"],[0,10,"<a href=\"bootstrap.php.cache.html#1894\">ResponseHeaderBag::makeDisposition<\/a>"],[0,9,"<a href=\"bootstrap.php.cache.html#1917\">ResponseHeaderBag::computeCacheControlValue<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#1996\">Container::__construct<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2000\">Container::compile<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2005\">Container::isFrozen<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2009\">Container::getParameterBag<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2013\">Container::getParameter<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2017\">Container::hasParameter<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2021\">Container::setParameter<\/a>"],[0,8,"<a href=\"bootstrap.php.cache.html#2025\">Container::set<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#2051\">Container::has<\/a>"],[0,19,"<a href=\"bootstrap.php.cache.html#2063\">Container::get<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#2117\">Container::initialized<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#2128\">Container::getServiceIds<\/a>"],[0,8,"<a href=\"bootstrap.php.cache.html#2140\">Container::enterScope<\/a>"],[0,9,"<a href=\"bootstrap.php.cache.html#2166\">Container::leaveScope<\/a>"],[0,7,"<a href=\"bootstrap.php.cache.html#2193\">Container::addScope<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2213\">Container::hasScope<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2217\">Container::isScopeActive<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2221\">Container::camelize<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2225\">Container::underscore<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#2319\">Kernel::__construct<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2330\">Kernel::init<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#2333\">Kernel::__clone<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#2341\">Kernel::boot<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#2357\">Kernel::terminate<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#2366\">Kernel::shutdown<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#2378\">Kernel::handle<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2385\">Kernel::getHttpKernel<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2389\">Kernel::getBundles<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#2393\">Kernel::isClassInActiveBundle<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#2402\">Kernel::getBundle<\/a>"],[0,16,"<a href=\"bootstrap.php.cache.html#2412\">Kernel::locateResource<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#2457\">Kernel::getName<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2464\">Kernel::getEnvironment<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2468\">Kernel::isDebug<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#2472\">Kernel::getRootDir<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2480\">Kernel::getContainer<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2484\">Kernel::loadClassCache<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2488\">Kernel::setClassCache<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#2492\">Kernel::getStartTime<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2496\">Kernel::getCacheDir<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2500\">Kernel::getLogDir<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2504\">Kernel::getCharset<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#2508\">Kernel::doLoadClassCache<\/a>"],[0,11,"<a href=\"bootstrap.php.cache.html#2514\">Kernel::initializeBundles<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#2556\">Kernel::getContainerClass<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2560\">Kernel::getContainerBaseClass<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#2564\">Kernel::initializeContainer<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#2582\">Kernel::getKernelParameters<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#2594\">Kernel::getEnvParameters<\/a>"],[0,7,"<a href=\"bootstrap.php.cache.html#2604\">Kernel::buildContainer<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#2625\">Kernel::prepareContainer<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#2642\">Kernel::getContainerBuilder<\/a>"],[0,4,"<a href=\"bootstrap.php.cache.html#2650\">Kernel::dumpContainer<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2662\">Kernel::getContainerLoader<\/a>"],[0,10,"<a href=\"bootstrap.php.cache.html#2674\">Kernel::stripComments<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2711\">Kernel::serialize<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2715\">Kernel::unserialize<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#2728\">ApcClassLoader::__construct<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2739\">ApcClassLoader::register<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2743\">ApcClassLoader::unregister<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#2747\">ApcClassLoader::loadClass<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#2754\">ApcClassLoader::findFile<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2761\">ApcClassLoader::__call<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2789\">ContainerAware::setContainer<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2808\">Bundle::boot<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2811\">Bundle::shutdown<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2814\">Bundle::build<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#2817\">Bundle::getContainerExtension<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2839\">Bundle::getNamespace<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#2844\">Bundle::getPath<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2852\">Bundle::getParent<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#2855\">Bundle::getName<\/a>"],[0,9,"<a href=\"bootstrap.php.cache.html#2864\">Bundle::registerCommands<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2890\">Bundle::getContainerExtensionClass<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2906\">ConfigCache::__construct<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2911\">ConfigCache::__toString<\/a>"],[0,6,"<a href=\"bootstrap.php.cache.html#2915\">ConfigCache::isFresh<\/a>"],[0,5,"<a href=\"bootstrap.php.cache.html#2936\">ConfigCache::write<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2954\">ConfigCache::getMetaFile<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#2981\">HttpKernel::__construct<\/a>"],[0,3,"<a href=\"bootstrap.php.cache.html#2987\">HttpKernel::handle<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#2999\">HttpKernel::terminate<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#3003\">HttpKernel::terminateWithException<\/a>"],[0,7,"<a href=\"bootstrap.php.cache.html#3013\">HttpKernel::handleRaw<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#3045\">HttpKernel::filterResponse<\/a>"],[0,1,"<a href=\"bootstrap.php.cache.html#3052\">HttpKernel::finishRequest<\/a>"],[0,8,"<a href=\"bootstrap.php.cache.html#3057\">HttpKernel::handleException<\/a>"],[0,8,"<a href=\"bootstrap.php.cache.html#3084\">HttpKernel::varToString<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#3125\">ContainerAwareHttpKernel::__construct<\/a>"],[0,2,"<a href=\"bootstrap.php.cache.html#3133\">ContainerAwareHttpKernel::handle<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
